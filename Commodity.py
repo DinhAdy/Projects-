@@ -39,7 +39,7 @@ except ImportError:
 data = None
 while(True):
     userinput = yf.Ticker(input("\nEnter the commodity's ticker symbols you want to track (Example: AAPL, TSLA, MSFT, etc.): \n"))
-    periods = input("\nEnter the period you want to track (Options: 1y/1d/1mo, 2y, 3y/3mo, 5y/5d): \n")
+    periods = input("\nEnter the period you want to track (Options: 1y/1d/1mo, 2y, 3y/3mo, 5y/5d, 10y, ytd, max): \n")
     data = userinput.history(period=periods)
     if data.empty:
         print("\n (AS YOU CAN TELL FROM THE ERROR) - INVALID COMMODITY SYMBOL/PERIOD, TRY AGAIN.\n")
@@ -49,7 +49,7 @@ while(True):
         break
 #Asking The User!
 
-period_lookup = {"1d": "a day", "5d": "5 days", "1mo": "a month", "3mo": "3 months", "1y": "a year", "2y": "2 years", "3y": "3 years", "5y": "5 years"}
+period_lookup = {"1d": "a day", "5d": "5 days", "1mo": "a month", "3mo": "3 months", "1y": "a year", "2y": "2 years", "3y": "3 years", "5y": "5 years", "10y": "10 years", "ytd": "year to date", "max": "its entire lifetime"}
 clean_period_name = period_lookup.get(periods.lower(), periods)
 avg_price = data['Close'].mean()
 daily_returns = data['Close'].pct_change().dropna()
