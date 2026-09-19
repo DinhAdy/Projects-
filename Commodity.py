@@ -49,7 +49,7 @@ while(True):
         break
 #Asking The User!
 
-period_lookup = {"1d": "day", "5d": "5 days", "1mo": "month", "3mo": "3 months", "1y": "1 year", "2y": "2 years", "3y": "3 years", "5y": "5 years"}
+period_lookup = {"1d": "a day", "5d": "5 days", "1mo": "a month", "3mo": "3 months", "1y": "a year", "2y": "2 years", "3y": "3 years", "5y": "5 years"}
 clean_period_name = period_lookup.get(periods.lower(), periods)
 avg_price = data['Close'].mean()
 daily_returns = data['Close'].pct_change().dropna()
