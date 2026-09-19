@@ -6,7 +6,7 @@ File Name:    Commodity.py
 Author:       Andy Dinh
 Date Created: September 18, 2026
 Version:      1.0.0
-Environment:  Python 3.12+ (Stable Production Baseline)
+Environment:  Python 3.13 or below (Stable Production Baseline)
 
 Description:
     A vectorized asset-screening architecture that maps  
