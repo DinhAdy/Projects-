@@ -31,4 +31,6 @@ Version 1.2.0 has a couple of upgrades
 
 -> Allows for infinite requests(one at a time) instead of ending the program after a commodity is analyzed. You can exit the program by pressing the prompt after a commodity is analyzed
 
+-> Added in a new factor "sentiment score" that uses an external free API to do a quick glance at the news and rate it
+
 Thanks for checking it out. Enjoy!
