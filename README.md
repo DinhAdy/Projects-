@@ -8,15 +8,23 @@ I've made the code as concise and as user friendly as possible. Be warned that f
 Occasionally, I'll upgrade the version of the file. 
 
 Version 1.1.0, has 5 core factor that it measures
+
 -> Average Daily Return
+
 -> Annualized Volatility
+
 -> Skewness
+
 -> Daily Trading Volume
+
 -> Market Beta
 
 Version 1.2.0 has a couple of upgrades
+
 -> Average Daily Return is upgraded so I take the natural logarithm of it, accounting for market behaviour
+
 -> Daily Trading Volume is now upgraded to Daily Liquidity by multiplying volume with share price, making it more accurate
+
 -> Cleaned up the formatting so its less overly-descriptive, gets straight to the point and is cleaner
 
 Thanks for checking it out. Enjoy!
