@@ -27,4 +27,8 @@ Version 1.2.0 has a couple of upgrades
 
 -> Cleaned up the formatting so its less overly-descriptive, gets straight to the point and is cleaner
 
+-> Added 6 months as a period option(Sorry! Missed it in version 1.1.0)
+
+-> Allows for infinite requests(one at a time) instead of ending the program after a commodity is analyzed. You can exit the program by pressing the prompt after a commodity is analyzed
+
 Thanks for checking it out. Enjoy!
