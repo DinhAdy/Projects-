@@ -2,10 +2,10 @@
 """
 =======================================================================================
 Project Name: Fully Vectorized Real-Beta Quant Engine
-File Name:    Vectorized_Screener_v3.py
+File Name:    SP500Entirething.py
 Author:       Andy Dinh
 Date Created: September 22, 2026
-Version:      3.0.0
+Version:      1.0.0
 Environment:  Python 3.13 or below (Stable Production Baseline)
 Note:         This script is designed to be run in a local Python environment. It may 
               not function properly in online interpreters due to package dependencies 
