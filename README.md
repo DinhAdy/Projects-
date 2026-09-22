@@ -33,4 +33,14 @@ Version 1.2.0 has a couple of upgrades
 
 -> Added in a new factor "sentiment score" that uses an external free API to do a quick glance at the news and rate it
 
+                                                  SP500entirething.py
+
+SP500EntireThing.py is a fun little deviation of Commodity.py. It scales my project up to the S&P 500, which basically tracks the entire US Market. Some cool features:
+
+-> It has every single one of the metrics calculated in Commodity.py and scores it just like Commodity.py except for news. NEWS FLASH(pun intended), searching up roughly 500 different stock's news articles, parsing through them and scoring them using AI is extremely tedious and time consuming! As such, for practical and balancing purposes, I have removed that feature.
+
+-> It also features custom periods input and custom multithreading depending on how strong your CPU is, to make it run as fast as your computer can make it run! Other than that, it does some fancy matrix stuff in the background, runs metrics for 500 stocks and just prints them out for you! 
+
+-> If I feel like it in the future, I'll add a feature where you guys can customize the amount of top-ranked stocks it prints out. But for now, peace!
+
 Thanks for checking it out. Enjoy!
