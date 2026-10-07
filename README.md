@@ -43,4 +43,45 @@ SP500EntireThing.py is a fun little deviation of Commodity.py. It scales my proj
 
 -> If I feel like it in the future, I'll add a feature where you guys can customize the amount of top-ranked stocks it prints out. But for now, peace!
 
+                                                    montecarlo.py
+
+
+This project is a high-speed Python tool that backtests custom stock portfolios and simulates 14 million imaginary future market paths to check total risk exposure. The entire process takes under one second (907ms) and uses a tiny 326 MiB of memory.
+
+
+First off, to get it out of the way! I do not have a degree in advanced financial mathematics, and I did not write every single line of this code by hand.
+I used a two-step AI assembly line to build this framework:
+
+
+1. Gemini (Free Version): I used this to research the best financial math methods—like using the VIX fear index to adjust historical stock volatility trends and using a shuffling loop to make sure my portfolio weights didn't cheat or overfit to short-term data noise.
+
+
+2. VS Code AI (Workspace Agent): I fed those math blueprints straight into my local coding agent. The AI handled the tedious typing, fixed coding syntax errors, and rewrote the math equations into a nested algebraic chain so my computer could run 14 million paths instantly without creating massive, slow temporary files in my laptop's memory.
+
+
+My Personal Code: The one part I manually built entirely from my own experience is the dynamic computer core and thread-handling safety block. I figured out how to safely balance processor threads by optimizing modded Minecraft Java servers when I was a kid so my laptop wouldn't freeze up under a heavy load. I just applied that exact same hardware logic here to let the script download five years of stock data over the internet in a few seconds.
+
+
+Core Features
+
+
+Simple User Setup: You just paste your hand-picked stock list directly into the code array. An auto-installer at the top automatically scans your laptop, grabs Python's tool installer, and downloads all required libraries with zero manual setup.
+
+
+Real-World Friction: Unlike simple textbook simulators, this backtester forces the strategy to pay real-world trading penalties day-by-day—including broker commissions, market execution slippage, and sell-side government SEC transaction taxes.
+
+
+Regime Crash Testing: If the VIX market fear index spikes past a high threshold (VIX > 25), the script automatically triggers a shock multiplier to individual stock risks, forcing the system to actively defend against market panics.
+Performance Profile
+
+
+Total Execution Time: 907 milliseconds(Lowest time recorded. Can vary quite a bit but virtually should never exceed 1100ms)
+
+
+Peak Estimated Memory Ceiling: 325.98 MiB RAM (Fits entirely within local CPU cache memory to maximize processing velocity).
+
+
+• Friction-Adjusted Scorecard: For this particular portfolio, which I selected by handpicking stocks from SP500entirething.py, model says I got a +96.57% Net Realized Return over a 1,001-day historical timeline, 1.007 Annual Sharpe Ratio and holding the max crash dip to -13.72%. Although in my opinion, I kind of dislike the Sharpe Ratio, since it treats volatility as bad when volatility is just a double-edged sword! It can be bad or good, but its not inherently bad like the ratio says it is. If I have some more time to dedicate to this, I might bump it up to a Sortino Ratio, which is better.
+
+
 Thanks for checking it out. Enjoy!
