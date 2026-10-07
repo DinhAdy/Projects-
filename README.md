@@ -81,7 +81,7 @@ Total Execution Time: 907 milliseconds(Lowest time recorded. Can vary quite a bi
 Peak Estimated Memory Ceiling: 325.98 MiB RAM (Fits entirely within local CPU cache memory to maximize processing velocity).
 
 
-• Friction-Adjusted Scorecard: For this particular portfolio, which I selected by handpicking stocks from SP500entirething.py, model says I got a +96.57% Net Realized Return over a 1,001-day historical timeline, 1.007 Annual Sharpe Ratio and holding the max crash dip to -13.72%. Although in my opinion, I kind of dislike the Sharpe Ratio, since it treats volatility as bad when volatility is just a double-edged sword! It can be bad or good, but its not inherently bad like the ratio says it is. If I have some more time to dedicate to this, I might bump it up to a Sortino Ratio, which is better.
+Friction-Adjusted Scorecard: For this particular portfolio, which I selected by handpicking stocks from SP500entirething.py, model says I got a +96.57% Net Realized Return over a 1,001-day historical timeline, 1.007 Annual Sharpe Ratio and holding the max crash dip to -13.72%. Although in my opinion, I kind of dislike the Sharpe Ratio, since it treats volatility as bad when volatility is just a double-edged sword! It can be bad or good, but its not inherently bad like the ratio says it is. If I have some more time to dedicate to this, I might bump it up to a Sortino Ratio, which is better.
 
 
 Thanks for checking it out. Enjoy!
