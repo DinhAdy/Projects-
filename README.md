@@ -72,7 +72,6 @@ Real-World Friction: Unlike simple textbook simulators, this backtester forces t
 
 
 Regime Crash Testing: If the VIX market fear index spikes past a high threshold (VIX > 25), the script automatically triggers a shock multiplier to individual stock risks, forcing the system to actively defend against market panics.
-Performance Profile
 
 
 Total Execution Time: 907 milliseconds(Lowest time recorded. Can vary quite a bit but virtually should never exceed 1100ms)
