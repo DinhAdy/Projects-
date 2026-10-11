@@ -83,4 +83,28 @@ Peak Estimated Memory Ceiling: 325.98 MiB RAM (Fits entirely within local CPU ca
 Friction-Adjusted Scorecard: For this particular portfolio, which I selected by handpicking stocks from SP500entirething.py, model says I got a +96.57% Net Realized Return over a 1,001-day historical timeline, 1.007 Annual Sharpe Ratio and holding the max crash dip to -13.72%. Although in my opinion, I kind of dislike the Sharpe Ratio, since it treats volatility as bad when volatility is just a double-edged sword! It can be bad or good, but its not inherently bad like the ratio says it is. If I have some more time to dedicate to this, I might bump it up to a Sortino Ratio, which is better.
 
 
+                                                      Mc.py
+
+
+This project MC(short for Monte Carlo), is an upgraded version of my old Monte Carlo project(montecarlo.py) ! It has a bunch of new snazzy upgrades, and finally, the Sortino upgrade I promised you guys earlier :)
+
+
+- Multi-Factor Risk Modeling: Integrated 7 macro factor proxies (Market, Size, Value, Rates, Gold, Healthcare, Energy) alongside live 13-week T-Bill risk-free rates.
+
+  
+- Regime-Switching Simulation Engine: Implemented a 3-state (Calm, High-Vol, Panic) VIX transition model featuring semi-parametric fat-tail augmentation for extreme crash modeling.
+
+  
+- Euler Risk Decomposition: Calculated marginal asset betas and percentage tail-risk contributions to identify portfolio "Tail Aggressors" vs. "Diversifiers".
+
+  
+- Liquidity-Adjusted VaR (L-VaR): Incorporated Amihud illiquidity metrics to simulate fire-sale liquidation haircuts and dynamic trade slippage under market stress.
+
+  
+- Ledoit-Wolf Shrinkage & FHS: Re-calibrated regime-conditioned covariance matrices using Ledoit-Wolf shrinkage combined with Filtered Historical Simulation.
+
+
+Again, this was wrote using the same old asssembly AI workflow! The lowest runtime to around 6.7(HAHA) seconds, but that's because I rolled it over a 10 day horizon rather than a 1 day horizon, so it was inevitable. However, the peak usage RAM stayed the same. So yeah, a bunch of new cool fancy advanced metrics, as well as that Sortino bump and a longer period of analysis.
+
+
 Thanks for checking it out. Enjoy!
