@@ -104,7 +104,7 @@ This project MC(short for Monte Carlo), is an upgraded version of my old Monte C
 - Ledoit-Wolf Shrinkage & FHS: Re-calibrated regime-conditioned covariance matrices using Ledoit-Wolf shrinkage combined with Filtered Historical Simulation.
 
 
-Again, this was wrote using the same old asssembly AI workflow! The lowest runtime to around 6.7(HAHA) seconds, but that's because I rolled it over a 10 day horizon rather than a 1 day horizon, so it was inevitable. However, the peak usage RAM stayed the same. So yeah, a bunch of new cool fancy advanced metrics, as well as that Sortino bump and a longer period of analysis.
+Again, this was wrote using the same old asssembly AI workflow! The lowest runtime was bumped to around 6.7(HAHA) seconds, but that's because I rolled it over a 10 day horizon rather than a 1 day horizon, so it was inevitable. However, the peak usage of RAM stayed roughly the same. So yeah, a bunch of new cool fancy advanced metrics, as well as that Sortino bump and a longer period of analysis.
 
 
 Thanks for checking it out. Enjoy!
