@@ -43,6 +43,32 @@ SP500EntireThing.py is a fun little deviation of Commodity.py. It scales my proj
 
 -> If I feel like it in the future, I'll add a feature where you guys can customize the amount of top-ranked stocks it prints out. But for now, peace!
 
+
+Version 4.0.0 changes:
+
+
+-> Added a batched Monte Carlo simulation using a Cornish-Fisher expansion optimized via Horner's method. It calculates a simple 95% 1-day Value-at-Risk to heavily penalize assets with asymmetric crash risk.
+
+
+-> Added exponentially weighted moments with a 63-day half-life so recent market volatility, skewness, and kurtosis carry more weight in the risk score than older data.
+
+
+-> Replaced price/volume columns with CF_Downside_Risk_% and Excess_Kurtosis (measuring fat-tail crash risk).
+
+
+-> Completely removed average price, volume tracking, and volume penalty, shifting penalty weighting directly to the Monte Carlo downside risk.
+
+
+-> Batches the S&P 500 stocks in neat 50-stock display batches, reports total scanned universe size, and replaces missing/NaN rows cleanly with "N/A".
+
+
+-> Bypasses the manual loop prompt and executes automatically with a default 1-year lookback (period="1y").
+
+
+-> Added importlib and ensurepip fallback bootstrapping for strict Python environments, alongside encoding changes to prevent Windows terminal character crashes.
+
+
+
                                                     montecarlo.py
 
 
