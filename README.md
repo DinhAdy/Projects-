@@ -171,5 +171,12 @@ This simply penalizes very niche stocks due to the fact that they are incredibly
 
 Again, just so we're clear! I built this using an AI assembly line. Also, I beat Dr. Strange 9,194,716 times(using the Time Stone definitely no pun intended).
 
+                                              Monte Carlo - SQL Version.zip
+
+This zip folder contains the database, as well as SQL fetching files. 
+
+MCDataFetch-SQL.py tells market_db.py to fetch those stock data, dumps it into an SQL file. It is simply to determine what tickers to determine what kind of data it should fetch. market_db.py does all the work of fetching it, MCDataFetch-SQL.py is the human interaction version.
+
+I have also updated it so that it fetches all of the historical data to simulate panic, making the portfolio VaR values very realistic and brutal because I have taken into account black swan events(catastrophic crashes in the stock market).
 
 Thanks for checking it out. Enjoy!
