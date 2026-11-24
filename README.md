@@ -184,4 +184,10 @@ I have also updated it so that it fetches all of the historical data to simulate
 KEEP IN MIND THAT ALL OF THESE ARE SELF-BOOTSTRAPPING, MEANING THAT NOTHING IS NEEDED OTHER THAN THE BASE PYTHON APP. IT WILL AUTOMATICALLY BOOTSTRAP PIP AND ALL THE REQUIRED IMPORTS FOR YOU
 
 
+Also, if you want to see an example of the output for Monte Carlo - SQL Version, go here 
+
+
+[View full 1,000,000-scenario GARCH-MIDAS terminal output](./sql-version/example_output.txt)
+
+
 Thanks for checking it out. Enjoy!
