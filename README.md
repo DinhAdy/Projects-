@@ -187,7 +187,7 @@ KEEP IN MIND THAT ALL OF THESE ARE SELF-BOOTSTRAPPING, MEANING THAT NOTHING IS N
 Also, if you want to see an example of the output for Monte Carlo - SQL Version, go here 
 
 
-[View full 1,000,000-scenario GARCH-MIDAS terminal output](./sql-version/example_output.txt)
+[View full 1,000,000-scenario GARCH-MIDAS terminal output](./Monte%20Carlo%20-%20SQL%20Version/example_output.txt)
 
 
 Thanks for checking it out. Enjoy!
