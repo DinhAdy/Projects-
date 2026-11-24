@@ -1,0 +1,259 @@
+EXAMPLE OUTPUT: 10 CALIBRATION RUNS. NOTE:
+
+Runtime may vary due to CPU Speed/Processing Power, etc...
+
+
+==============================================================================
+                 HISTORICAL BACKTEST -- OBSERVED MARKET DATA                  
+------------------------------------------------------------------------------
+
+ 
+ Strategy                                       Long-only minimum variance
+ 
+ Test period                                    2010-11-17 to 2026-11-02
+ 
+ Lookback / test observations                   252 / 4013
+ 
+ Rebalance events / VIX overrides               621 / 455
+ 
+ Rebalance rule                                 20% relative / 0.5% floor / 21-day max / VIX stress
+ 
+ Cumulative transaction costs                   $56,060.79
+ 
+ Backtest cumulative net return                 +832.83%
+ 
+ Backtest maximum peak-to-trough drawdown       -29.53%
+ 
+ Backtest Sharpe (annualized)                   0.774
+ 
+ Backtest Sortino (annualized)                  1.097
+ 
+ Historical replay using observed daily close-to-close returns; includes modeled trading frictions.
+
+
+==============================================================================
+GARCH-MIDAS QUANT DASHBOARD -- 1,000,000 SCENARIOS (10 CALIBRATIONS, 252-DAY HORIZON)
+==============================================================================
+
+ 
+ OBSERVED DATA BASIS
+ 
+ Data source: Yahoo Finance auto-adjusted closing prices in local SQLite cache
+ 
+ Aligned observation period                     2009-11-17 to 2026-11-02
+ 
+ Usable portfolio return observations           4,265
+ 
+ Fixed-weight historical annualized volatility  15.26%
+ 
+ Observed panic-classified days                 125 (VIX level + 5-day momentum rule)
+ 
+ Panic sample target                            120 (met; 17.0 years searched)
+ 
+ Panic observations are historical dates classified by the model's VIX rule.
+ 
+ This count describes the calibration sample, not future panic frequency.
+
+ 
+ Your portfolio weights
+
+   BRK-B         20.00%
+   CI             3.50%
+   EBAY           3.50%
+   VRSN          10.00%
+   XOM            5.00%
+   PPL           15.00%
+   WMT           10.00%
+   MA            10.00%
+   COP            4.00%
+   PM             9.00%
+   LLY           10.00%
+
+ 
+ Min-variance comparison
+
+   BRK-B         21.05%
+   CI             2.65%
+   EBAY           4.54%
+   VRSN          15.74%
+   XOM            0.00%
+   PPL           35.27%
+   WMT           11.66%
+   MA             1.39%
+   COP            0.09%
+   PM             7.40%
+   LLY            0.20%
+
+ 
+ Median fitted GARCH-t degrees of freedom       4.57
+ 
+ Starting volatility regime                     Calm
+ 
+ Usable historical factor observations          Calm 3,191 / High 941 / Panic 125
+ 
+ Bootstrap pool rows (real + synthetic)         Calm 3,191 / High 941 / Panic 125
+
+ 
+ Regime-conditioned factor loadings
+ 
+  Regime              Factor                       Loading
+
+   Calm                Intercept                   0.000191
+   Calm                Market (SPY)                0.857781
+   Calm                Size (IWM-SPY)             -0.120459
+   Calm                Value (IWD-IWF)             0.329025
+   Calm                Rates (TLT)                 0.038996
+   Calm                Gold (GLD)                 -0.018219
+   Calm                Health Care (XLV-SPY)       0.257895
+   Calm                Energy (XLE-SPY)            0.051827
+   High-volatility     Intercept                   0.000240
+   High-volatility     Market (SPY)                0.908627
+   High-volatility     Size (IWM-SPY)             -0.165573
+   High-volatility     Value (IWD-IWF)             0.310259
+   High-volatility     Rates (TLT)                 0.045968
+   High-volatility     Gold (GLD)                 -0.005439
+   High-volatility     Health Care (XLV-SPY)       0.225950
+   High-volatility     Energy (XLE-SPY)            0.075396
+   Panic               Intercept                   0.000277
+   Panic               Market (SPY)                0.966455
+   Panic               Size (IWM-SPY)             -0.085580
+   Panic               Value (IWD-IWF)             0.301741
+   Panic               Rates (TLT)                 0.001132
+   Panic               Gold (GLD)                  0.001121
+   Panic               Health Care (XLV-SPY)       0.392352
+   Panic               Energy (XLE-SPY)            0.072741
+
+ 
+ Synthetic panic rows (not observed history)    0
+ 
+ Factor rows excluded (missing data)            2
+ 
+ Risk-free rate input (13-week T-Bill)          4.15%
+ 
+ GARCH FHS volatility multiplier                0.860x
+ 
+ Calibration runs                               10
+ 
+ Calibration / path seeds                       None / None (None = fresh randomness)
+ 
+ Mean run-level 95% VaR                         35.62%
+ 
+ Median run-level 95% VaR                       35.60%
+ 
+ Run-level VaR standard deviation               0.31 percentage points
+ 
+ Standard error of mean run-level VaR           0.10 percentage points
+ 
+ Run-level VaR 5th-95th percentile              35.18% - 35.98% (empirical)
+ 
+ Run-level VaR observed min / max               35.13% / 36.00%
+ 
+ Ensemble spread includes calibration randomness and finite path sampling.
+ 
+ Run-level percentiles are empirical summaries, not formal confidence bounds.
+
+ 
+ Path volatility memory                         GJR-GARCH; variance ratio capped 0.25x-9.00x
+ 
+ Cascade cutoffs (current regime)               -0.72% / -1.41%
+ 
+ Model + simulation time                        31883.61 ms
+ 
+ Initial portfolio value                        $1,075,600.16
+
+
+------------------------------------------------------------------------------
+MODEL-SIMULATED OUTCOMES -- 252-DAY HORIZON
+------------------------------------------------------------------------------
+ 
+ Mean simulated horizon return                  +23.876%
+ 
+ Mean simulated P&L                             $+256,807.40
+ 
+ Median simulated horizon return                +24.360%
+ 
+ 5th / 95th percentile horizon return           -35.62% / +81.19%
+ 
+ Horizon terminal-return standard deviation     35.47%
+ 
+ Profitable simulated paths                     76.20%
+ 
+ Annualized-equivalent Sharpe (model)           0.556
+ 
+ Annualized-equivalent Sortino (model)          1.289
+ 
+ Historical daily-return Sharpe (annualized)    0.827
+ 
+ Simulated statistics are estimates from historical inputs and model assumptions.
+ 
+ They are not actual returns, guarantees, or a prediction of future performance.
+
+
+------------------------------------------------------------------------------
+                 PANIC STRESS SENSITIVITY (COVARIANCE-BASED)                  
+------------------------------------------------------------------------------
+  Ticker    Weight     Panic Beta  Stress Share VaR Sensitivity ($) CVaR Sensitivity ($)   Role
+  ----------------------------------------------------------------------------
+  BRK-B     20.00%          0.825        16.50% $    63,221.61 $    87,719.34   Diversifier
+  LLY       10.00%          1.523        15.23% $    58,363.78 $    80,979.15   Tail Aggressor
+  PPL       15.00%          0.742        11.13% $    42,644.66 $    59,169.03   Diversifier
+  WMT       10.00%          1.010        10.10% $    38,712.26 $    53,712.87   Neutral
+  MA        10.00%          0.976         9.76% $    37,410.23 $    51,906.31   Neutral
+  VRSN      10.00%          0.881         8.81% $    33,758.92 $    46,840.16   Neutral
+  PM         9.00%          0.893         8.04% $    30,804.59 $    42,741.06   Neutral
+  XOM        5.00%          1.301         6.51% $    24,923.39 $    34,580.96   Tail Aggressor
+  COP        4.00%          1.416         5.66% $    21,699.33 $    30,107.60   Tail Aggressor
+  CI         3.50%          1.253         4.39% $    16,801.19 $    23,311.48   Tail Aggressor
+  EBAY       3.50%          1.102         3.86% $    14,769.87 $    20,493.04   Neutral
+  ----------------------------------------------------------------------------
+  TOTAL    100.00%          1.000       100.00% $   383,109.82 $   531,561.00
+
+
+------------------------------------------------------------------------------
+MODEL-SIMULATED LOSS AND DRAWDOWN ESTIMATES
+------------------------------------------------------------------------------
+ 
+ Pooled ensemble 95% horizon VaR                35.62% ($383,109.82)
+ 
+ Pooled ensemble 99% horizon VaR                58.37% ($627,793.91)
+ 
+ 95% expected shortfall (CVaR)                  49.42% ($531,561.00)
+ 
+ 95% peak-to-trough drawdown estimate           54.84% ($589,855.79)
+ 
+ 99% peak-to-trough drawdown estimate           69.81% ($750,829.26)
+ 
+ Drawdown VaR / horizon VaR ratio               1.54x
+ 
+ VaR-threshold terminal equity                  $692,490.34
+ 
+ VaR-threshold liquidity haircut                $48.37 (20% liquidation)
+ 
+ 95% VaR + threshold liquidity adjustment       $383,158.19 (35.62%)
+ 
+ 95% CVaR + same VaR-threshold add-on           $531,609.38
+ 
+ Full-liquidation VaR-threshold haircut         $463.02
+ 
+ 95% VaR + full-liquidation threshold add-on    $383,572.84 (35.66%)
+ 
+ 95% CVaR + full-liquidation threshold add-on   $532,024.00
+ 
+ VaR is the simulated loss threshold exceeded by about 5% / 1% of paths.
+ 
+ CVaR is average loss among the worst 5% of paths.
+ 
+ Drawdown is each path's maximum within-horizon peak-to-trough decline.
+ 
+ Liquidity add-ons are thresholds, not scenario-level simulated L-VaR.
+
+
+------------------------------------------------------------------------------
+DISTRIBUTION SHAPE -- DYNAMIC MOMENTUM
+------------------------------------------------------------------------------
+ 
+ Real-time skewness                             0.096
+ 
+ Real-time excess kurtosis                      -0.730
+
+==============================================================================
